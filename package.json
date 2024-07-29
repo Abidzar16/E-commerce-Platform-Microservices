@@ -1,0 +1,24 @@
+{
+	"name": "e-commerce-platform",
+	"version": "1.0.0",
+	"description": "Microservices-based e-commerce platform",
+	"scripts": {
+			"start": "docker-compose up",
+			"build": "docker-compose build",
+			"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": ["microservices", "e-commerce", "nodejs", "typescript"],
+	"author": "Your Name",
+	"license": "MIT",
+	"devDependencies": {
+			"typescript": "^4.9.5"
+	},
+	"workspaces": [
+			"api-gateway",
+			"auth-service",
+			"product-service",
+			"cart-service",
+			"order-service",
+			"shared"
+	]
+}
